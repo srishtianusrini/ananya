@@ -90,26 +90,20 @@
         }
 
         .heart-photo {
-            width: 250px;
-            height: 250px;
+            width: 100%;
+            max-width: 500px;
+            height: 400px;
             margin: 0 auto 20px;
-            background: linear-gradient(135deg, #FFB6D9, #FF69B4);
+            background: #f0f0f0;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 4em;
-            position: relative;
-            transform: scale(1);
-            transition: transform 0.3s ease;
             overflow: hidden;
             background-size: cover;
+            background-repeat: no-repeat;
             background-position: center;
-            clip-path: path('M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z');
         }
 
-        .heart-photo:hover {
-            transform: scale(1.05);
-        }
 
         .memory-text {
             font-size: 1.2em;
@@ -332,9 +326,8 @@
             }
 
             .heart-photo {
-                width: 200px;
-                height: 200px;
-                font-size: 3em;
+                width: 100%;
+                height: 300px;
             }
         }
     </style>
@@ -346,8 +339,8 @@
     <div class="container">
         <!-- Welcome Screen -->
         <div id="welcome-screen">
-            <h1>💕 Hi Cutie! 💕</h1>
-            <p>I need to ask you something...<br>But first, let's take a look at some of our pictures! 🌸</p>
+            <h1>💕 Hey Bestie! 💕</h1>
+            <p>I have something special to ask you...<br>But first, let's take a trip down memory lane! 🌸</p>
             <button class="start-btn" onclick="startJourney()">Let's Go! ✨</button>
         </div>
 
@@ -390,23 +383,23 @@
         const memories = [
             {
                 image: 'photo1.jpg',  // Replace with your photo filename or URL
-                text: "Remember me squishing you? I miss you! 💕"
+                text: "Remember when we first met? I knew we'd be best friends forever! 💕"
             },
             {
                 image: 'photo2.jpg',  // Replace with your photo filename or URL
-                text: "I miss laughing like jokers... but...! 🌙✨"
+                text: "All those late-night talks and endless laughter... you're the best! 🌙✨"
             },
             {
                 image: 'photo3.jpg',  // Replace with your photo filename or URL
-                text: "you somehow always want to fight with me (just for the drama)!"
+                text: "From coffee dates to spontaneous adventures, every moment with you is special! ☕🎉"
             },
             {
                 image: 'photo4.jpg',  // Replace with your photo filename or URL
-                text: "But? DW YOU ARE NEVER GOING TO BE ABLE TO GET RID OF ME! 💪😂"
+                text: "You've been there through everything - the good, the bad, and the hilarious! 💪😂"
             },
             {
                 image: 'photo5.jpg',  // Replace with your photo filename or URL
-                text: "So many inside jokes, so many memories... now you better answer properly because I MISS YOU SO MUCH AND LOVE YOU SO MUCH! 🎭💫"
+                text: "So many inside jokes, so many memories... and so many more to come! 🎭💫"
             }
         ];
 
